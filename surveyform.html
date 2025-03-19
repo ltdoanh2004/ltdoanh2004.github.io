@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+    
+</head>
+<body>
+    <div class="container">
+        
+        <img src="logo-vector-IU-01.png"  alt="University Logo" class="logo">
+
+        <h2>Survey</h2>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+        
+        <h3>Your information:</h3>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            
+            <h3>How did you hear about us?</h3>
+            <div class="radio-group">
+                <input type="radio" id="search" name="source" value="Search engine">
+                <label for="search">Search engine</label>
+                <input type="radio" id="word" name="source" value="Word of mouth">
+                <label for="word">Word of mouth</label>
+                <input type="radio" id="social" name="source" value="Social Media">
+                <label for="social">Social Media</label>
+                <input type="radio" id="other" name="source" value="Other">
+                <label for="other">Other</label>
+            </div>
+            
+            <h3>Would you like to receive announcements about new CDs and special offers?</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" id="yes1" name="announcements" value="yes">
+                <label for="yes1">YES, I'd like that.</label><br>
+                <input type="checkbox" id="yes2" name="email_announcements" value="yes">
+                <label for="yes2">YES, please send me email announcements.</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="contact">Please contact me by:</label>
+                <select id="contact" name="contact">
+                    <option value="email_postal">Email or postal mail</option>
+                    <option value="email">Email only</option>
+                    <option value="postal">Postal mail only</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

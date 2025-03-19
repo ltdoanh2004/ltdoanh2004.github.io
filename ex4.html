@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Le Thien Doanh</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --section-bg: white;
+            --border-color: #ddd;
+            --link-color: #007bff;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #181818;
+            --text-color: #f1f1f1;
+            --section-bg: #242424;
+            --border-color: #444;
+            --link-color: #66b3ff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            background: var(--section-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            background: var(--section-bg);
+        }
+
+        .nav-link {
+            color: var(--text-color) !important;
+        }
+
+        .toggle-theme {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <div class="container mt-4">
+        <!-- Header -->
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+            <h1>Le Thien Doanh</h1>
+            <div>
+                <button class="btn btn-secondary toggle-theme">Toggle Dark Mode</button>
+            </div>
+        </div>
+        <nav class="nav nav-pills mt-3">
+            <a class="nav-link" href="#">Research</a>
+            <a class="nav-link" href="#">Publications</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Contact</a>
+        </nav>
+
+        <!-- Main content -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="section">
+                    <h3>Research Interest</h3>
+                    <ul>
+                        <li><strong>Computer Vision</strong></li>
+                        <li><strong>Multimodal Large Language Models</strong></li>
+                        <li><em>Machine Learning Operations</em></li>
+                        <li><em>Natural Language Processing</em></li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li><strong>Programming:</strong> Python, C, C++, Java</li>
+                        <li><strong>Libraries:</strong> PyTorch, OpenCV, Hugging Face</li>
+                        <li><strong>Tools:</strong> Docker, GitHub</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="section">
+                    <h3>Education</h3>
+                    <p>International University - Vietnam National University – Vietnam</p>
+                    <p><strong>Computer Science</strong> (GPA: 3.55/4.00)</p>
+                </div>
+
+                <div class="section">
+                    <h3>Publications</h3>
+                    <ul>
+                        <li><a href="https://2023.multimediaeval.com/paper9.pdf">Multimodal Fusion in NewsImages 2023</a></li>
+                        <li><em>Red Light Running Detection</em>, J.UCS Journal (Accepted)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="section mt-4">
+            <h3>Contact Me</h3>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+
+        <footer class="text-center mt-4">
+            <p>© 2025 All rights reserved</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS & Dark Mode Toggle Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.toggle-theme').addEventListener('click', function() {
+            let body = document.body;
+            let theme = body.getAttribute('data-theme');
+            body.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>

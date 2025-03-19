@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Le Thien Doanh</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 5px;
+        }
+
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+        }
+
+        /* Main layout */
+        .main {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+        }
+
+        .section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .section h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 15px;
+        }
+
+        ul li {
+            padding: 5px 0;
+        }
+
+        /* Sub-lists under projects/publications if needed */
+        .sub-list {
+            margin-left: 1.2rem;
+            list-style: disc;
+        }
+
+        .review-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+        .italic {
+            font-style: italic;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+            .contact {
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>Le Thien Doanh</h1>
+                <!-- Optional small nav, if you want -->
+                <nav class="nav">
+                    <a href="#">Research</a>
+                    <a href="#">Publications</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="contact">
+                <div><strong>Phone:</strong> 0944674383</div>
+                <div><strong>Email:</strong> <a href="mailto:doah.aiwork@gmail.com">doah.aiwork@gmail.com</a></div>
+                <div><strong>GitHub:</strong> <a href="https://github.com/ltdoan2004" target="_blank">github.com/ltdoan2004</a></div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Research Interest -->
+                <div class="section">
+                    <h3>Research Interest</h3>
+                    <ul>
+                        <li>
+                            <strong>Computer Vision</strong>
+                            <span style="float: right;"><strong>Multimodal Large Language Models</strong></span>
+                        </li>
+                        <li>
+                            <em>Machine Learning Operations</em>
+                            <span style="float: right;"><em>Natural Language Processing</em></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skills -->
+                <div class="section">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> Python, C, C++, Java</li>
+                        <li><strong>Frameworks/Libraries:</strong> PyTorch, Faiss, Chroma, OpenCV, Streamlit, Hugging Face, RoboFlow, Pandas, Numpy, scikit-learn</li>
+                        <li><strong>Tools/Platforms:</strong> Docker, Jupyter Notebook, GitHub</li>
+                        <li><strong>Data Analysis:</strong> Preprocessing, analysis, and visualization</li>
+                    </ul>
+                </div>
+
+                <!-- Honors and Awards -->
+                <div class="section">
+                    <h3>Honors and Awards</h3>
+                    <ul>
+                        <li><strong>Iran Geometry Olympiad - IGO:</strong> 1 Iron compass (2020-2021)</li>
+                        <li><strong>Iran Geometry Olympiad - IGO:</strong> 1 Honorable mention (2019-2020)</li>
+                        <li><strong>Top 3 NewImages:</strong> Connecting Text and Images</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Education -->
+                <div class="section">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>
+                            <strong>International University - Vietnam National University – Vietnam</strong><br/>
+                            Thu Duc, Ho Chi Minh<br/>
+                            <strong>Computer Science</strong> (GPA: 3.55/4.00)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Publications -->
+                <div class="section">
+                    <h3>Publications</h3>
+                    <ul>
+                        <li>
+                            <strong>MediaEval Workshop</strong><br/>
+                            Tien-Huy Nguyen, Hoang-Long Nguyen-Huu, Thien-Doanh Le, Huu-Loc Tran, Quoc-Khanh Le-Tran, Hoang-Bach Ngo, Minh-Hung An, Quang-Vinh Dinh:
+                            <a href="https://2023.multimediaeval.com/paper9.pdf" target="_blank">Multimodal Fusion in NewsImages 2023</a>
+                        </li>
+                        <li>
+                            <strong>J.UCS Journal of Universal Computer Science</strong> [Doanh Le Thien et al.]:
+                            <em>Red Light Running Detection</em>, accepted for publication.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Projects -->
+                <div class="section">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li>
+                            <strong>Text-to-Motion Generation</strong> — Develop MoE-Motion based Diffusion Models
+                            <ul class="sub-list">
+                                <li>Position: Leader (01/02/2024 - Present)</li>
+                                <li>Develop text-to-motion model using denoising diffusion + Mixture of Experts</li>
+                                <li>Align text space with motion space for robust motion generation</li>
+                                <li>
+                                    <strong>GitHub:</strong>
+                                    <a href="https://github.com/ltdoan2004/MotionDiffusion-MoE" target="_blank">MotionDiffusion-MoE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Redlight-running-detection</strong> — Review and implement model
+                            <ul class="sub-list">
+                                <li>Position: Authors (15/12/2023)</li>
+                                <li>Analyze over 100 research papers on red-light running</li>
+                                <li>Uses YOLOv8 + DeepSort for real-time traffic violation detection</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Multimodal Large Language Models</strong> — Extending multi-modality
+                            <ul class="sub-list">
+                                <li>Position: Leader (30/3/2023 - Present)</li>
+                                <li>Add 'motion' modality to LLMs</li>
+                                <li>Develop pipelines for text, images, audio, video, plus motion data</li>
+                                <li>
+                                    <strong>GitHub:</strong>
+                                    <a href="https://github.com/ltdoan2004/MLLM-Motion" target="_blank">MLLM-Motion</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Tech Blog</strong> — AI-driven blog assistance
+                            <ul class="sub-list">
+                                <li>Position: Developer (15/6/2023 - Present)</li>
+                                <li>Hybrid search with OpenAI embeddings for Q&A and metadata linking</li>
+                                <li>
+                                    <strong>GitHub:</strong>
+                                    <a href="https://github.com/ltdoan2004/OOAD-tech-blog-project" target="_blank">OOAD-tech-blog-project</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>MediaEval 2023</strong> — Connecting Text and Images: CLIP Pre-Training
+                            <ul class="sub-list">
+                                <li>Position: Member (30/11/2023)</li>
+                                <li>Developing CLIP-like model for text-image understanding</li>
+                                <li>
+                                    <strong>Workshop link:</strong>
+                                    <a href="https://multimediaeval.github.io/editions/2023/" target="_blank">MediaEval 2023</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Language Proficiency -->
+                <div class="section">
+                    <h3>Language Proficiency</h3>
+                    <ul>
+                        <li>Vietnamese: Native</li>
+                        <li>English: Intermediate (5.5 IELTS UWE Test)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">© all rights reserved 2025</p>
+    </div>
+</body>
+</html>
